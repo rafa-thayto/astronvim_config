@@ -10,6 +10,9 @@ return {
   --   end,
   -- },
   {
+    "tpope/vim-surround",
+  },
+  {
     "catppuccin/nvim",
     as = "catppuccin",
     config = function() require("catppuccin").setup {} end,

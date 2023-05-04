@@ -23,13 +23,13 @@ return {
     -- quick save
     --
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-    ["<leader>ss"] = { ":%s/", desc = "Search and Replace RegExp" },
+    -- ["<leader>ss"] = { ":%s/", desc = "Search and Replace RegExp" },
+    ["<leader>ss"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = "Search and Replace RegExp" },
     ["<C-p>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" },
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
     ["n"] = { "nzzzv" },
     ["N"] = { "Nzzzv" },
-    -- ["<leader>gg"] = { ":G<CR>", desc = "Fugitive" },
   },
   t = {
     -- setting a mapping to false will disable it
