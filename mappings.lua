@@ -36,7 +36,16 @@ return {
     -- ["<esc>"] = false,
   },
   v = {
+    -- Paste over currently selected text without yanking it
+    ["p"] = { '"_dP' },
+
+    ["<"] = { "<gv" },
+    [">"] = { ">gv" },
+  },
+  x = {
     ["J"] = { ":m '>+1<cr>gv=gv" },
     ["K"] = { ":m '<-2<cr>gv=gv" },
+    ["<A-J>"] = { ":m '>+1<cr>gv=gv" },
+    ["<A-K>"] = { ":m '<-2<cr>gv=gv" },
   },
 }
