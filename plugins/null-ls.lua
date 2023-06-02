@@ -11,7 +11,7 @@ return {
       -- Set a formatter
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettierd,
-      null_ls.builtins.formatting.eslint_d,
+      -- null_ls.builtins.formatting.eslint_d,
       null_ls.builtins.diagnostics.eslint,
     }
     return config -- return final config table
