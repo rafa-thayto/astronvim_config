@@ -1,9 +1,11 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   dependencies = {
+    { "windwp/nvim-ts-autotag" },
     { "nvim-treesitter/nvim-treesitter-context", opts = { enable = true } },
   },
   opts = {
-    -- ensure_installed = { "lua" },
+    autotag = { enable = true },
+    ensure_installed = { "typescript", "tsx" },
   },
 }

@@ -25,6 +25,7 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     -- ["<leader>ss"] = { ":%s/", desc = "Search and Replace RegExp" },
     ["<leader>ss"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = "Search and Replace RegExp" },
+    -- ["<leader>ss"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = "Search Word RegExp" },
     ["<C-p>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" },
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },

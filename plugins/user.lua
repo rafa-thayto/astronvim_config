@@ -14,6 +14,24 @@ return {
     ft = "markdown",
     build = function() vim.fn["mkdp#util#install"]() end,
   },
+  -- {
+  --   "mawkler/modicator.nvim",
+  --   init = function()
+  --     -- These are required for Modicator to work
+  --     vim.o.cursorline = true
+  --     vim.o.number = true
+  --     vim.o.termguicolors = true
+  --   end,
+  --   event = "VeryLazy",
+  --   config = function() require("modicator").setup() end,
+  -- },
+  {
+    "folke/tokyonight.nvim",
+    as = "tokyonight",
+    -- lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   {
     "styled-components/vim-styled-components",
   },
@@ -34,8 +52,16 @@ return {
     end,
   },
   {
-    "catppuccin/nvim",
-    as = "catppuccin",
-    config = function() require("catppuccin").setup {} end,
+    "xiyaowong/transparent.nvim",
+    cmd = {
+      "TransparentEnable",
+      "TransparentDisable",
+      "TransparentToggle",
+    },
   },
+  -- {
+  --   "catppuccin/nvim",
+  --   as = "catppuccin",
+  --   config = function() require("catppuccin").setup {} end,
+  -- },
 }
