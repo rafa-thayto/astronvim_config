@@ -31,6 +31,8 @@ return {
     ["<C-u>"] = { "<C-u>zz" },
     ["n"] = { "nzzzv" },
     ["N"] = { "Nzzzv" },
+    -- ui
+    ["<leader>uT"] = { "<cmd>TransparentEnable<cr>", desc = "Enable background transparency" },
   },
   t = {
     -- setting a mapping to false will disable it
