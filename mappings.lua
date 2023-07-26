@@ -33,6 +33,8 @@ return {
     ["N"] = { "Nzzzv" },
     -- ui
     ["<leader>uT"] = { "<cmd>TransparentEnable<cr>", desc = "Enable background transparency" },
+    -- neotree
+    ["<leader>E"] = { "<cmd>Neotree focus buffers<cr>", desc = "Enable background transparency" },
   },
   t = {
     -- setting a mapping to false will disable it
