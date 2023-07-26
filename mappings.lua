@@ -34,7 +34,7 @@ return {
     -- ui
     ["<leader>uT"] = { "<cmd>TransparentEnable<cr>", desc = "Enable background transparency" },
     -- neotree
-    ["<leader>E"] = { "<cmd>Neotree focus buffers<cr>", desc = "Enable background transparency" },
+    ["<leader>E"] = { "<cmd>Neotree toggle buffers<cr>", desc = "Toggle Buffers Explorer" },
   },
   t = {
     -- setting a mapping to false will disable it
